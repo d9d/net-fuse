@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Local or remote file-system mounting via Fuse bindings",
   "main": "index.js",
+  "bin": {
+    "net-fuse": "./index.js"
+  },
   "scripts": {
     "install": "node feature-detect"
   },
@@ -21,10 +24,12 @@
     "bluebird": "^2.9.33",
     "fusejs": "git+https://github.com/thejinx0r/fusejs.git#ce406d6",
     "get-parameter-names": "^0.2.0",
+    "node-incoming": "0.0.1",
     "promisify-node": "^0.1.5",
     "protobufjs": "^4.0.0"
   },
   "devDependencies": {
-    "app-module-path": "1.0.x"
+    "app-module-path": "1.0.x",
+    "babel": "^5.8.21"
   }
 }

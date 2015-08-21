@@ -50,16 +50,13 @@ message openRequest {
 
 message readRequest {
   string path     = 1;
-  uint32 offset   = 2;
+  uint32 position = 2;
   uint32 length   = 3;
-  uint32 position = 4;
 }
 
 message writeRequest {
   string path     = 1;
-  uint32 offset   = 2;
-  uint32 length   = 3;
-  uint32 position = 4;
+  uint32 position = 2;
 
   // bytes are last in case we're streaming
   bytes  bytes    = 15;
